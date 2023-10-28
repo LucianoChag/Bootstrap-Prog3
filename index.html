@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AGILmind</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/109/109827.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/109/109827.png"
+      type="image/x-icon"
+    />
 
     <!--CDN Bootstrap-->
     <link
@@ -18,10 +22,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <!--ICON-->
@@ -58,7 +64,7 @@
       </div>
     </nav>
 
-    <!-- Carousel -->
+    <!-- CAROUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -76,8 +82,15 @@
           aria-label="Slide 2"
         ></button>
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <!--MOBILE-->
+          <img
+            src="https://img.freepik.com/foto-gratis/propietario-negocio-trabajando-su-estrategia_23-2149241288.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=ais"
+            class="d-block d-md-none w-100"
+            alt="..."
+          />
           <!--ESCRITORIO-->
           <img
             src="https://img.freepik.com/foto-gratis/papeles-comerciales-naturaleza-muerta-varias-piezas-mecanismo_23-2149352652.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=sph"
@@ -85,8 +98,12 @@
             alt="..."
           />
           <div class="carousel-caption d-block text-start">
-            <h3 class="fs-1">Manejamos de la manera más óptima tu flujo de trabajo</h3>
-            <p>Nos especializamos en el asesorameinto en Desarrollo de Software</p>
+            <h3 class="fs-1">
+              Manejamos de la manera más óptima tu flujo de trabajo
+            </h3>
+            <p>
+              Nos especializamos en el asesorameinto en Desarrollo de Software
+            </p>
             <p>
               <a class="btn btn-lg btn-primary" href="#selector-categorias">
                 Conocer Más
@@ -95,15 +112,25 @@
           </div>
         </div>
         <div class="carousel-item">
+          <!--MOBILE-->
+          <img
+            src="https://img.freepik.com/foto-gratis/escritorio-detalles-proceso-trabajo_144627-15931.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=sph"
+            class="d-block d-md-none w-100"
+            alt="..."
+          />
+          <!--ESCRITORIO-->
           <img
             src="https://img.freepik.com/foto-gratis/lider-inicio-dibujando-diagrama-flujo-bordo-discutiendo-proyecto_74855-3307.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=sph"
             class="d-none d-md-block w-100"
             alt="..."
           />
           <div class="carousel-caption d-block">
-            <h3 class="fs-1" style="color: black;">Trabajamos con un equipo interdisciplinario</h3>
-            <p style="color: black;">
-              Contamos con los mejores especialistas en Diseño UX/UI, Frontend y Backend.
+            <h3 class="fs-1" style="color: black">
+              Trabajamos con un equipo interdisciplinario
+            </h3>
+            <p style="color: black">
+              Contamos con los mejores especialistas en Diseño UX/UI, Frontend y
+              Backend.
             </p>
             <p>
               <a class="btn btn-lg btn-primary" href="#selector-categorias">
@@ -133,115 +160,226 @@
       </button>
     </div>
 
+    <!--MAIN-->
     <main>
       <!--PRODUCTOS-->
-      <!--SELECTOR DE CATEGORÍAS-->
+      <!--SELECTOR DE CATEGORIAS-->
       <section class="container" id="selector-categorias">
-        <div class="row gap-4 mb-3 mt-5">
+        <p class="fs-2">Seleccionar categorias</p>
+        <div class="row gap-4">
           <div class="col d-flex justify-content-center p-0">
             <a
-              href="#selector-categorias"
-              class="border border-3 border-info d-flex gap-1 align-items-center rounded-5 p-3 text-decoration-none category"
-              data-category="To do"
+              href="#to do"
+              class="border border-3 border-info d-flex gap-1 align-items-center rounded-3 p-3 text-decoration-none category"
             >
               <img
                 src="https://cdn-icons-png.flaticon.com/128/4180/4180225.png"
-                alt="To do"
+                alt="toDo"
                 style="width: 25px; height: 25px"
               />
-              <span class="fs-4 text-dark-emphasis">To do</span>
-          </a>
-          </div>
-          <div class="col d-flex justify-content-center p-0">
-            <a
-              href="#selector-categorias"
-              class="border border-3 border-info d-flex gap-1 align-items-center rounded-5 p-3 text-decoration-none category"
-              data-category="In Process"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/7920/7920082.png"
-                alt="In process"
-                style="width: 25px; height: 25px"
-              />
-              <span class="fs-4 text-dark-emphasis">In Process</span>
+              <span class="text-dark-emphasis">To Do</span>
             </a>
           </div>
           <div class="col d-flex justify-content-center p-0">
             <a
-              href="#selector-categorias"
-              class="border border-3 border-info d-flex gap-1 align-items-center rounded-5 p-3 text-decoration-none category"
-              data-category="In Testing"
+              href="#in process"
+              class="border border-3 border-info d-flex gap-1 align-items-center rounded-3 p-3 text-decoration-none category"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/7920/7920082.png"
+                alt="In Process"
+                style="width: 25px; height: 25px"
+              />
+              <span class="text-dark-emphasis">In Process</span>
+            </a>
+          </div>
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#in testing"
+              class="border border-3 border-info d-flex gap-1 align-items-center rounded-3 p-3 text-decoration-none category"
             >
               <img
                 src="https://cdn-icons-png.flaticon.com/128/6196/6196779.png"
                 alt="In Testing"
                 style="width: 25px; height: 25px"
               />
-              <span class="fs-4 text-dark-emphasis">In Testing</span>
+              <span class="text-dark-emphasis">In Testing</span>
             </a>
           </div>
           <div class="col d-flex justify-content-center p-0">
             <a
-              href="#selector-categorias"
-              class="border border-3 border-info d-flex gap-1 align-items-center rounded-5 p-3 text-decoration-none category"
-              data-category="Done"
+              href="#done"
+              class="border border-3 border-info d-flex gap-1 align-items-center rounded-3 p-3 text-decoration-none category"
             >
               <img
                 src="https://cdn-icons-png.flaticon.com/128/359/359805.png"
                 alt="Done"
                 style="width: 25px; height: 25px"
               />
-              <span class="fs-4 text-dark-emphasis">Done</span>
+              <span class="text-dark-emphasis">Done</span>
             </a>
           </div>
         </div>
-
-        <div id="tasks" class="d-flex flex-wrap justify-content-center"></div>
-
-        <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Detalles de la Tarea</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </section>
+      <!--CATEGORIAS PRODUCTO-->
+      <section class="container-fluid" id="categorias">
+        <!--TO DO-->
+        <section class="text-center mb-5" id="to do">
+          <h3 class="display-6">To Do</h3>
+          <div
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://img.freepik.com/vector-gratis/ilustracion-concepto-extraccion-datos_114360-4886.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=ais"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Optimización de la Base de Datos</h5>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <img class="modal-image" src="" alt="Tarea Imagen" style="max-width: 100%; margin-bottom: 3%;">
-                  <div>
-                    <p class="modal-text"></p>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a href="" class="btn btn-outline-success mt-auto">
+                      Ver Descripción
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+        </section>
+        <!--IN PROCESS-->
+        <section class="text-center mb-5" id="in process">
+          <h3 class="display-6">In Process</h3>
+          <div
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://img.freepik.com/foto-gratis/hombre-trabajando-tablet-oficina_23-2148179130.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=ais"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Research UX</h5>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a href="" class="btn btn-outline-success mt-auto">
+                      Ver Descripción
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--IN TESTING-->
+        <section class="text-center mb-5" id="in testing">
+          <h3 class="display-6">In Testing</h3>
+          <div
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://img.freepik.com/vector-gratis/eleccion-concepto-trabajador_23-2148627427.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=ais"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Desarrollo pantalla cliente</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a href="" class="btn btn-outline-success mt-auto">
+                      Ver Descripción
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--DONE-->
+        <section class="text-center mb-5" id="done">
+          <h3 class="display-6">Done</h3>
+          <div
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://img.freepik.com/vector-gratis/diseno-fondo-arquitectura_1168-193.jpg?size=626&ext=jpg&ga=GA1.1.2108749652.1698279528&semt=ais"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">
+                      Arquitectura del proyecto "Buen Sabor"
+                    </h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a href="" class="btn btn-outline-success mt-auto">
+                      Ver Descripción
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+
+    <!--FOOTER-->
     <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
+      <!--COPYRIGHT-->
         <div class="col-md-4 d-flex align-items-center">
           <a
             href="/"
             class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-            >Ágil Project Workflow</a
+            >Agil Project Workflow</a
           >
-          <span class="mb-3 mb-md-0 text-body-secondary"
-            >&copy; 2023 AGILmind, Inc</span
-          >
+          <span class="mb-3 mb-md-0 text-body-secondary">
+            &copy; 2023 AGILmind, Inc
+          </span>
         </div>
+        <!--REDES-->
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <!--FACEBOOK-->
           <li class="ms-3">
             <a class="text-body-secondary" href=""
               ><i class="bi bi-facebook"></i
             ></a>
           </li>
+          <!--INSTAGRAM-->
           <li class="ms-3">
             <a class="text-body-secondary" href=""
               ><i class="bi bi-instagram"></i
             ></a>
           </li>
+          <!--TWITTER/X-->
           <li class="ms-3">
             <a class="text-body-secondary" href=""
               ><i class="bi bi-twitter-x"></i
@@ -260,3 +398,13 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+<!--
+  src="https://cdn-icons-png.flaticon.com/128/359/359805.png"
+
+  src="https://cdn-icons-png.flaticon.com/128/6196/6196779.png"
+
+  src="https://cdn-icons-png.flaticon.com/128/7920/7920082.png"
+
+  src="https://cdn-icons-png.flaticon.com/128/4180/4180225.png"
+-->
